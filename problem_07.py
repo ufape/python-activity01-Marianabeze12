@@ -1,8 +1,6 @@
+# -- coding: utf-8 --
 
-
-# -*- coding: utf-8 -*-
-
-# YOUR FULL NAME
+# Mariana
 # UAG00098
 # Problem Set 1 - Problem 7
 # Description:
@@ -12,27 +10,48 @@
 Inputs, Processes and Output (IPO)
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 Input(s):
-O arquivo de entrada contém um número inteiro.
-Exemplo: 
-Digite a distância (em km) desejada: 30
+Seis valores, negativos e/ou positivos.
+Exemplo:
+Valor (1/6): 7
+Valor (2/6): -5
+Valor (3/6): 6
+Valor (4/6): -3.4
+Valor (5/6): 4.6
+Valor (6/6): 12
 
 Processes:
-Dois carros (X e Y) partem em uma mesma direção. O carro X sai com velocidade constante de 60 km/h e o carro Y sai com velocidade constante de 90 km/h.
-
-Em uma hora (60 min) o carro Y consegue se distanciar 30 quilômetros do carro X, ou seja, consegue se afastar um quilômetro a cada 2 min.
-
-Leia a distância (em km) e calcule quanto tempo leva (em min) para o carro Y tomar essa distância do outro carro.
+Faça um programa que leia 6 valores. Estes valores serão somente negativos ou positivos (desconsidere os valores nulos). A seguir, mostre a quantidade de valores positivos digitados.
 
 Output(s):
-Imprima o tempo necessário seguido da mensagem "min".
+Imprima uma mensagem dizendo quantos valores positivos foram lidos.
 Exemplo:
-Levará 60 min.
+Detectamos 4 valores positivos.
 """
 
 
 def main():
-    pass # your code here
+    valor1 = int(input(f'valor (1/6): '))
+    valor2 = int(input(f'valor (2/6): '))
+    valor3 = int(input(f'valor (3/6): '))
+    valor4 = int(input(f'valor (4/6): '))
+    valor5 = int(input(f'valor (5/6): '))
+    valor6 = int(input(f'valor (6/6): '))
+    quant = 0
+    if valor1 > 0:
+      quant = quant +1
+    if valor2 > 0:
+      quant = quant +1
+    if valor3 > 0:
+      quant = quant +1
+    if valor4 > 0:
+      quant = quant +1
+    if valor5 > 0:
+      quant = quant =+1
+    if valor6 > 0:
+      quant = quant +1
+    print(f'Detectamos {quant} valores positivos.')
+    
 
-
-if __name__ == '__main__':
+if _name_ == '_main_':
     main()
+

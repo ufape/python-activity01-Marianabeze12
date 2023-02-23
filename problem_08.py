@@ -1,8 +1,6 @@
+# -- coding: utf-8 --
 
-
-# -*- coding: utf-8 -*-
-
-# YOUR FULL NAME
+# Mariana 
 # UAG00098
 # Problem Set 1 - Problem 7
 # Description:
@@ -12,28 +10,36 @@
 Inputs, Processes and Output (IPO)
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 Input(s):
-Seis valores, negativos e/ou positivos.
-Exemplo:
-Valor (1/6): 7
-Valor (2/6): -5
-Valor (3/6): 6
-Valor (4/6): -3.4
-Valor (5/6): 4.6
-Valor (6/6): 12
+O arquivo de entrada contém um número inteiro.
+Exemplo: 
+Digite a distância (em km) desejada: 30
 
 Processes:
-Faça um programa que leia 6 valores. Estes valores serão somente negativos ou positivos (desconsidere os valores nulos). A seguir, mostre a quantidade de valores positivos digitados.
+Dois carros (X e Y) partem em uma mesma direção. O carro X sai com velocidade constante de 60 km/h e o carro Y sai com velocidade constante de 90 km/h.
+
+Em uma hora (60 min) o carro Y consegue se distanciar 30 quilômetros do carro X, ou seja, consegue se afastar um quilômetro a cada 2 min.
+
+Leia a distância (em km) e calcule quanto tempo leva (em min) para o carro Y tomar essa distância do outro carro.
 
 Output(s):
-Imprima uma mensagem dizendo quantos valores positivos foram lidos.
+Imprima o tempo necessário seguido da mensagem "min".
 Exemplo:
-Detectamos 4 valores positivos.
+Levará 60 min.
 """
 
 
 def main():
-    pass # your code here
+    distancia = int(input("Digite a distância (em km) desejada: "))
+    X = 60 #km/h
+    Y = 90 #km/h
+    velocidade = Y - X
+    tempo = distancia / velocidade
+    tempo_em_min= tempo * 60
+    print(f"Levará {int(tempo_em_min)} min.")
 
 
-if __name__ == '__main__':
+if name == 'main':
     main()
+
+
+

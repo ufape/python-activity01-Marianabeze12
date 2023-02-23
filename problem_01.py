@@ -1,7 +1,7 @@
-# -*- coding: utf-8 -*-
+# -- coding: utf-8 --
 
 # Mariana
-# UFAPE
+# UAG00098
 # Problem Set 1 - Problem 1
 # Description:
 
@@ -16,13 +16,11 @@ Você deve imprimir a mensagem "Hello, World!"
 
 Output(s):
 Hello, World!
-""" Print( "Hello, World!" ) 
+"""
 
 
 def main():
-    pass # your code here
- Print ( "Hello, World!" )
+   print("Hello, World!")
 
-
-if __name__ == '__main__':Mariana
-    main(Mariana)
+if _name_ == '_main_':
+    main()

@@ -1,6 +1,6 @@
-# -*- coding: utf-8 -*-
+# -- coding: utf-8 --
 
-# YOUR FULL NAME
+# Mariana
 # UAG00098
 # Problem Set 1 - Problem 6
 # Description:
@@ -28,8 +28,15 @@ O maior número é: 106
 
 
 def main():
-    pass # your code here
+  a = int(input("Digite o valor A:"))
+  b = int(input('Digite o valor B: '))
+  c = int(input('Digite i valor C: '))
+  maiorAB = (a + b + abs(a - b)) / 2
+  if maiorAB > c:
+    print(f'O maior número é: {maiorAB}')
+  else:
+    print(f'O maior número é: {c}')
 
 
-if __name__ == '__main__':
+if _name_ == '_main_':
     main()
